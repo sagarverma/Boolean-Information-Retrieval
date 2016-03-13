@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Suggle</title>
+<link rel="icon" type="image/png" href="{{ url_for('static', filename='favicon-32x32.png') }}" />
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+<script type=text/javascript src="{{ url_for('static', filename='jquery-2.1.4.js') }}"></script>
+<script type=text/javascript src="{{ url_for('static', filename='jquery-ui.js') }}"></script>
+<script type=text/javascript src="{{ url_for('static', filename='my.js') }}"></script>
+<script src="{{ url_for('static', filename='bootstrap.min.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='jquery.autocomplete.min.js') }}"></script>
+</head>
+<body>
+
+<div id="header">
+<form action="", id="searchForm">
+  <input type="text", id="searchInput", name="query">
+  <!--<input type="submit", Value="Search", id='searchButton'>-->
+</form>
+</div>
+
+<div id="nav">
+<table id='searchResTable'>
+<th>Results</th>
+</table>
+</div>
+
+</body>
+</html>
